@@ -1,0 +1,324 @@
+{
+    "import DialogMixin": {
+        "prefix": "import DialogMixin",
+        "description": "导入@/mixins/dialog",
+        "body": [
+            "import DialogMixin from '@/mixins/dialog'"
+        ]
+    },
+    "import WindowsMixin": {
+        "prefix": "import WindowsMixin",
+        "description": "导入@/mixins/windows",
+        "body": [
+            "import WindowsMixin from '@/mixins/windows'"
+        ]
+    },
+    "import SidePageMixin": {
+        "prefix": "import SidePageMixin",
+        "description": "@/mixins/sidePage",
+        "body": [
+            "import SidePageMixin from '@/mixins/sidePage'"
+        ]
+    },
+    "import Actions": {
+        "prefix": "import Actions",
+        "description": "导入@components/PageList/Actions",
+        "body": [
+            "import Actions from '@/components/PageList/Actions"
+        ]
+    },
+    "SidePageMixin": {
+        "prefix": "SidePageMixin",
+        "description": "SidePageMixin",
+        "body": [
+            "SidePageMixin"
+        ]
+    },
+    "WindowsMixin": {
+        "prefix": "WindowsMixin",
+        "description": "WindowsMixin",
+        "body": [
+            "WindowsMixin"
+        ]
+    },
+    "detailTabs": {
+        "prefix": "detailTabs",
+        "description": "detailTabs",
+        "body": [
+            "detailTabs: [",
+            "  { label: '$1', key: '$2' },",
+            "],"
+        ]
+    },
+    "l-k": {
+        "prefix": "l-k",
+        "description": "{ label: '...', key: '...' }",
+        "body": [
+            "{ label: '$1', key: '$2' },"
+        ]
+    },
+    "fc": {
+        "prefix": "fc",
+        "description": "{ label: '...', key: '...' }",
+        "body": [
+            "form: {",
+            "   fc: this.$form.createForm(this, { onFieldsChange: this.onFieldsChange }),",
+            "},"
+        ]
+    },
+    "handleConfirm": {
+        "prefix": "handleConfirm",
+        "description": "提交form方法",
+        "body": [
+            "async handleConfirm () {",
+            "  this.loading = true",
+            "  try {",
+            "    const values = await this.validateForm()",
+            "  } catch (error) {",
+            "    throw error",
+            "  } finally {",
+            "    this.loading = false",
+            "  }",
+            "},"
+        ]
+    },
+    "decorators": {
+        "prefix": "decorators",
+        "description": "description",
+        "body": [
+            "decorators: {",
+            "   name: [",
+            "      'name',",
+            "      {",
+            "        rules: [",
+            "          { required: true, message: '$2' },",
+            "        ],",
+            "      },",
+            "    ],",
+            "},"
+        ]
+    },
+    "formItemLayout": {
+        "prefix": "formItemLayout",
+        "description": "y-formItemLayout",
+        "body": [
+            "formItemLayout: {",
+            "  wrapperCol: { span: CreateServerForm.wrapperCol },",
+            "  labelCol: { span: CreateServerForm.labelCol },",
+            "},"
+        ]
+    },
+    "getProjectTableColumn": {
+        "prefix": "getProjectTableColumn",
+        "description": "getProjectTableColumn",
+        "body": [
+            "getProjectTableColumn()"
+        ]
+    },
+    "getRegionTableColumn": {
+        "prefix": "getRegionTableColumn",
+        "description": "getRegionTableColumn",
+        "body": [
+            "getRegionTableColumn()"
+        ]
+    },
+    "getEnabledTableColumn": {
+        "prefix": "getEnabledTableColumn",
+        "description": "getEnabledTableColumn",
+        "body": [
+            "getEnabledTableColumn()"
+        ]
+    },
+    "getPublicTableColumn": {
+        "prefix": "getPublicTableColumn",
+        "description": "getPublicTableColumn",
+        "body": [
+            "getPublicTableColumn()"
+        ]
+    },
+    "getNameDescriptionTableColumn": {
+        "prefix": "getNameDescriptionTableColumn",
+        "description": "getNameDescriptionTableColumn",
+        "body": [
+            "getNameDescriptionTableColumn()"
+        ]
+    },
+    "getCopyWithContentTableColumn": {
+        "prefix": "getCopyWithContentTableColumn",
+        "description": "getCopyWithContentTableColumn",
+        "body": [
+            "getCopyWithContentTableColumn()"
+        ]
+    },
+    "getIpsTableColumn": {
+        "prefix": "getIpsTableColumn",
+        "description": "getIpsTableColumn",
+        "body": [
+            "getIpsTableColumn()"
+        ]
+    },
+    "getSwitchTableColumn": {
+        "prefix": "getSwitchTableColumn",
+        "description": "getSwitchTableColumn",
+        "body": [
+            "getSwitchTableColumn()"
+        ]
+    },
+    "getTagTableColumn": {
+        "prefix": "getTagTableColumn",
+        "description": "getTagTableColumn",
+        "body": [
+            "getTagTableColumn()"
+        ]
+    },
+    "getTimeTableColumn": {
+        "prefix": "getTimeTableColumn",
+        "description": "getTimeTableColumn",
+        "body": [
+            "getTimeTableColumn()"
+        ]
+    },
+    "getAccountTableColumn": {
+        "prefix": "getAccountTableColumn",
+        "description": "getAccountTableColumn",
+        "body": [
+            "getAccountTableColumn()"
+        ]
+    },
+    "getNameFilter": {
+        "prefix": "getNameFilter",
+        "description": "getNameFilter",
+        "body": [
+            "getNameFilter($1)"
+        ]
+    },
+    "getBrandFilter": {
+        "prefix": "getBrandFilter",
+        "description": "getBrandFilter",
+        "body": [
+            "getNameFilter()"
+        ]
+    },
+    "getStatusFilter": {
+        "prefix": "getStatusFilter",
+        "description": "getStatusFilter",
+        "body": [
+            "getStatusFilter('$1')"
+        ]
+    },
+    "getTenantFilter": {
+        "prefix": "getStatusFilter",
+        "description": "getStatusFilter",
+        "body": [
+            "getTenantFilter()"
+        ]
+    },
+    "getAccountFilter": {
+        "prefix": "getAccountFilter",
+        "description": "getAccountFilter",
+        "body": [
+            "getAccountFilter()"
+        ]
+    },
+    "getIpFilter": {
+        "prefix": "getIpFilter",
+        "description": "getIpFilter",
+        "body": [
+            "getIpFilter()"
+        ]
+    },
+    "createList": {
+        "prefix": "createList",
+        "description": "",
+        "body": [
+            "list: this.$list.createList(this, {",
+            "  resource: 'cloudregions',",
+            "  getParams: { cloud_env: 'private_or_onpremise' },",
+            "  filterOptions: {",
+            "    name: {",
+            "      label: '名称',",
+            "      filter: true,",
+            "      formatter: val => {",
+            "        return `name.contains(${val})`",
+            "      },",
+            "    },",
+            "  },",
+            "}),"
+        ]
+    },
+    "initSidePageTab": {
+        "prefix": "initSidePageTab",
+        "description": "initSidePageTab",
+        "body": [
+            "this.initSidePageTab('detail')"
+        ]
+    },
+    "groupActions": {
+        "prefix": "groupActions",
+        "description": "",
+        "body": [
+            "groupActions: [",
+            "  {",
+            "    label: '新建',",
+            "    action: () => {",
+            "    }",
+            "  },",
+            "  meta: () => {",
+            "    return {",
+            "      buttonType: 'primary',",
+            "    }",
+            "  },",
+            "],"
+        ]
+    },
+    "singleActions": {
+        "prefix": "singleActions",
+        "description": "单条的所有操作",
+        "body": [
+            "singleActions: [",
+            "  {",
+            "    label: '删除',",
+            "    action: (obj) => {",
+            "      this.createDialog('DeleteResDialog', {",
+            "        title: '删除',",
+            "        data: [obj],",
+            "        columns: this.columns,",
+            "        list: this.list,",
+            "      })",
+            "    },",
+            "  },",
+            "],"
+        ]
+    },
+    "createDialog": {
+        "prefix": "createDialog",
+        "description": "createDialog",
+        "body": [
+            "this.createDialog('$1', {",
+            "  title: '$2',",
+            "  data: [obj],",
+            "  columns: this.columns,",
+            "  list: this.list,",
+            "})"
+        ]
+    },
+    "DeleteResDialog": {
+        "prefix": "DeleteResDialog",
+        "description": "DeleteResDialog",
+        "body": [
+            "this.createDialog('DeleteResDialog', {",
+            "  title: '删除',",
+            "  data: [obj],",
+            "  columns: this.columns,",
+            "  list: this.list,",
+            "})"
+        ]
+    },
+    "get": {
+        "prefix": "get",
+        "description": "manager.get",
+        "body": [
+            "await $2.get({ id: $1 })"
+        ]
+    }
+}

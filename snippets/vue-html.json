@@ -1,0 +1,58 @@
+{
+  "page-list": {
+    "prefix": "page-list",
+    "description": "模版",
+    "body": [
+      "<page-list",
+      "  :list=\"list\"",
+      "  :columns=\"columns\"",
+      "  :single-actions=\"singleActions\"",
+      "  :group-actions=\"groupActions\" />"
+    ]
+  },
+  "base-dialog": {
+    "prefix": "base-dialog",
+    "description": "base-dialog",
+    "body": [
+      "<base-dialog @cancel=\"cancelDialog\">",
+      "  <div slot=\"header\">{{params.title}}</div>",
+      "  <div slot=\"body\">$1</div>",
+      "  <div slot=\"footer\">",
+      "    <a-button type=\"primary\" @click=\"handleConfirm\" :loading=\"loading\">{{ $t('dialog.ok') }}</a-button>",
+      "    <a-button @click=\"cancelDialog\">{{ $t('dialog.cancel') }}</a-button>",
+      "  </div>",
+      "</base-dialog>"
+    ]
+  },
+  "detail": {
+    "prefix": "detail",
+    "description": "detail",
+    "body": [
+      "<detail",
+      "  :list=\"list\"",
+      "  :data=\"data\"",
+      "  :base-info=\"baseInfo\"",
+      "  statusModule=\"$1\" />"
+    ]
+  },
+  "base-side-page": {
+    "prefix": "base-side-page",
+    "description": "base-side-page",
+    "body": [
+      "<base-side-page",
+      "  @cancel=\"cancelSidePage\"",
+      "  title=\"$1\"",
+      "  icon=\"$2\"",
+      "  :res-name=\"data.name\"",
+      "  :actions=\"params.actions\"",
+      "  :current-tab=\"params.windowData.currentTab\"",
+      "  :tabs=\"detailTabs\"",
+      "  @tab-change=\"handleTabChange\">",
+      "  <template v-slot:actions>",
+      "    <actions :options=\"params.singleActions\" :row=\"data\" button-type=\"link\" button-size=\"small\" />",
+      "  </template>",
+      "  <component :is=\"params.windowData.currentTab\" :res-id=\"params.resId\" :data=\"data\" :list=\"params.list\" :getParams=\"getParams\" />",
+      "</base-side-page>"
+    ]
+  }
+}
